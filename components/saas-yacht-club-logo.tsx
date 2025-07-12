@@ -1,32 +1,23 @@
-"use client"
-
 import { cn } from "@/lib/utils"
 
 export function SaaSYachtClubLogo({ className }: { className?: string }) {
   return (
     <svg
       className={cn("text-background", className)}
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
+      viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M5 21C5 21 5 20.5153 5.09599 19.8457C5.28129 18.5597 6.00365 14.5 12 14.5C17.9964 14.5 18.7187 18.5597 18.904 19.8457C19 20.5153 19 21 19 21H5Z"
+        d="M50 10C27.9 10 10 27.9 10 50C10 72.1 27.9 90 50 90C72.1 90 90 72.1 90 50C90 27.9 72.1 10 50 10Z"
         stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
+        strokeWidth="5"
       />
-      <path
-        d="M12 14.5V3L5 11H12Z"
-        fill="currentColor"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+      <path d="M35 40V60" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
+      <path d="M65 40V60" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
+      <path d="M42 70H58" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
+      <path d="M30 30L70 70" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
+      <path d="M70 30L30 70" stroke="currentColor" strokeWidth="5" strokeLinecap="round" />
     </svg>
   )
 }

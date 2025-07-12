@@ -298,7 +298,9 @@ export function CleanSidebar({ onLockedItemClick }: { onLockedItemClick: () => v
             <Separator className="my-4" />
           </motion.div>
           <motion.div className="space-y-1" variants={contentVariants} transition={transitionProps}>
-            {!isCollapsed && <h3 className="text-xs font-medium text-muted-foreground mb-2 px-3">Connected Apps</h3>}
+            {!isCollapsed && (
+              <h3 className="text-xs font-medium text-muted-foreground mb-2 px-3 uppercase">Integrations</h3>
+            )}
             {isCollapsed && <Separator className="mb-4" />}
             <TooltipProvider delayDuration={0}>
               {integrationItems.map((integration) => (
@@ -395,7 +397,7 @@ export function CleanSidebar({ onLockedItemClick }: { onLockedItemClick: () => v
                 )}
               </Tooltip>
             </TooltipProvider>
-            <DropdownMenuContent align="start" side="top" className="w-56 mb-2 ml-2">
+            <DropdownMenuContent align="center" side="right" className="w-56 ml-2">
               <DropdownMenuItem>
                 <User className="h-4 w-4 mr-2" />
                 Profile
